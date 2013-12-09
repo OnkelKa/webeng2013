@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 	    <head>
 		    <title>XHTML Tags</title>
 		    <meta http-equiv = "Content-type" content = "text/html; charset = utf-8" />
 		    <style type="text/css">	
-				table {border-collapse:collapse; width: 78em; margin-right: -2em}
-				table, th, td {border: 1em solid white; padding: 1.5em; font-family: sans-serif}
-				th {background-color: #00CCFF; color: white}
-				td {text-align: center; background-color: #99FFFF}
-				#tablediv {display: inline; float: left}
-				#leftpannel {display: inline; float: right; position: fixed; padding: 2em}
+				table {border-collapse: collapse;
+						width: 70em;
+						margin-right: -2em}
+				table, th, td {border: 1em solid white;
+							   padding: 1.5em;
+							   font-family: sans-serif}
+				th {background-color: #00CCFF;
+					color: white}
+				td {text-align: center;
+					background-color: #99FFFF}
+				#tablediv {display: inline;
+						   float: left}
+				#leftpannel {display: inline;
+							 float: right;
+							 position: fixed;
+							 padding-top: 1em;
+							 padding-left: 2em}
+				form {border-collapse: collapse;
+					  background-color: #FFBB55}
+				fieldset {border-collapse: collapse;
+						  border: 1px solid #FFBB55}
+				legend {font-family: sans-serif;
+						text-align: center;
+						color: white;
+						padding-top: 0.5em;
+						margin-left: 5%;
+						margin-bottom: -5%}
+				.ins {width: 187px;
+				      height: 40px;
+				      text-align: center;
+				      border: none}
+				.but {width: 187px;
+					  height: 40px;
+					  background-color: #FF7722;
+					  border: none;
+					  color: white;
+					  font-family: sans-serif;
+					  font-weight: bold}
+				.but:hover {background-color: #FF5522}
 			</style>
 	    </head>
 	    <body>
@@ -18,7 +51,7 @@
 		    	<table>
 					<tbody>
 						<tr>
-							<th colspan = "4"><strong>XHTML 1.0 Tags</strong></th>
+							<th colspan = "4"><strong><h1>XHTML 1.0 Tags</h1></strong></th>
 						</tr>
 						<tr>
 							<th>Tag</th>
@@ -461,8 +494,17 @@
 				</table>
 			</div>
 			<div id = "leftpannel">
-				<p><a href = "http://validator.w3.org/check?uri=https%3A%2F%2Fchristianmueller.cloudcontrolled.com"><img src = "http://www.w3.org/Icons/valid-xhtml10.png" alt = "W3C-XHTML 1.0 valid" /></a></p>
-				<p><a href = "http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fchristianmueller.cloudcontrolled.com%2F&amp;profile=css2"><img src ="http://www.w3.org/Icons/valid-css2.png" alt = "W3C-CSS 2.0 valid" /></a></p>
+				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+   					<fieldset>
+      					<legend><strong>Auf Wikipedia suchen</strong></legend>
+      					<p><input class = ins type = "text"   name = "search" value = "XHTML 1.0" /></p>	
+					    <p><span title = "Zeig mir den Wikipedia-Artikel"><input class = but type = "submit" name = "go" value = "Artikel zeigen" /></span></p>
+					    <p><span title = "Zeig mir die Trefferliste für Artikel auf Wikipedia (entspricht der Volltextsuche)"><input class = but type = "submit" name = "fulltext" value = "Artikelliste zeigen" /></span></p>
+					</fieldset>
+				</form>
+				<p style = "padding-top: 2em"><a href = "http://validator.w3.org/check?uri=https%3A%2F%2Fchristianmueller.cloudcontrolled.com"><img src = "http://www.w3.org/Icons/valid-xhtml10.png" alt = "W3C-XHTML 1.0 valide" /></a></p>
+				<p><a href = "http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fchristianmueller.cloudcontrolled.com%2F&amp;profile=css2"><img src ="http://www.w3.org/Icons/valid-css2.png" alt = "W3C-CSS 2.0 valide" /></a></p>
+				<p><a href = "http://wave.webaim.org/report#/https%3A%2F%2Fchristianmueller.cloudcontrolled.com%2F"><img src ="http://www.w3.org/WAI/wcag2AAA.gif" alt = "WCAG 2.0 AAA und Section 508 valide" /></a></p>
 			</div>
 	    </body>
     </html>
