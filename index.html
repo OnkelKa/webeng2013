@@ -3,13 +3,14 @@
 	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	    <head>
 		    <title>XHTML Tags</title>
+		    <meta http-equiv = "Content-type" content = "text/html; charset = utf-8" />
 		    <style type="text/css">	
-				table {border-collapse:collapse}
+				table {border-collapse:collapse; width: 78em; margin-right: -2em}
 				table, th, td {border: 1em solid white; padding: 1.5em; font-family: sans-serif}
 				th {background-color: #00CCFF; color: white}
 				td {text-align: center; background-color: #99FFFF}
-				#tablediv {display: inline; float: left}
-				#leftpannel {display: inline; float: right; position: fixed; padding: 2em}
+				#tablediv {display: inline-block; float: left}
+				#leftpannel {display: inline-block; float: right; position: fixed; padding: 2em}
 			</style>
 	    </head>
 	    <body>
@@ -17,10 +18,13 @@
 		    	<table>
 					<tbody>
 						<tr>
+							<th colspan = "4"><strong>XHTML 1.0 Tags</strong></th>
+						</tr>
+						<tr>
 							<th>Tag</th>
 							<th>Beschreibung</th>
 							<th>Inline/Block</th>
-							<th>semanatisch/nichtsemantisch</th>
+							<th>Semantik</th>
 						</tr>
 						<tr>
 							<td><strong>&lt;a &gt;&lt;/a&gt;</strong></td>
@@ -457,8 +461,8 @@
 				</table>
 			</div>
 			<div id = "leftpannel">
-				<img src = "http://www.w3.org/Icons/valid-xhtml10" alt = "W3C-XHTML 1.0 valid" />
-				<img src = "http://www.w3.org/Icons/valid-css2-blue" alt = "W3C-CSS 2.0 valid" />
+				<p><img src = "http://www.w3.org/Icons/valid-xhtml10" alt = "W3C-XHTML 1.0 valid" /></p>
+				<p><img src = "http://www.w3.org/Icons/valid-css2-blue" alt = "W3C-CSS 2.0 valid" /></p>
 			</div>
 	    </body>
     </html>
