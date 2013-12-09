@@ -26,16 +26,18 @@
 					  background-color: #FFBB55}
 				fieldset {border-collapse: collapse;
 						  border: 1px solid #FFBB55}
-				legend {font-family: sans-serif;
-						text-align: center;
+				label {font-family: sans-serif;
 						color: white;
-						padding-top: 0.5em;
-						margin-left: 5%;
-						margin-bottom: -5%}
-				.ins {width: 187px;
+						font-weight: bold;
+						padding-left: 5%;
+						padding-top: 5%;
+						padding-bottom: 3%;
+						display: block}
+				#ins {width: 187px;
 				      height: 40px;
 				      text-align: center;
-				      border: none}
+				      border: none;
+				      display: block}
 				.but {width: 187px;
 					  height: 40px;
 					  background-color: #FF7722;
@@ -496,9 +498,9 @@
 			<div id = "leftpannel">
 				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
    					<fieldset>
-      					<legend><strong>Auf Wikipedia suchen</strong></legend>
-      					<p><input class = "ins" type = "text"   name = "search" value = "XHTML 1.0" /></p>	
-					    <p><span title = "Zeig mir den Wikipedia-Artikel"><input class = "but" type = "submit" name = "go" value = "Artikel zeigen" /></span></p>
+      					<label for = "ins">Auf Wikipedia suchen</label> 
+      					<input id = "ins" type = "text" name = "search" value = "XHTML 1.0" />
+      					<p><span title = "Zeig mir den Wikipedia-Artikel"><input class = "but" type = "submit" name = "go" value = "Artikel zeigen" /></span></p>
 					    <p><span title = "Zeig mir die Trefferliste für Artikel auf Wikipedia (entspricht der Volltextsuche)"><input class = "but" type = "submit" name = "fulltext" value = "Artikelliste zeigen" /></span></p>
 					</fieldset>
 				</form>
